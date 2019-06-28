@@ -1,1 +1,0 @@
-powershell -ExecutionPolicy RemoteSigned .\PasswordCheck_EN.ps1
