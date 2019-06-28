@@ -3,3 +3,6 @@
 
 ## 使い方
 Start.batを起動し、調べたいパスワードを入力してEnterを押すだけ！！
+
+# English
+-> https://github.com/ahodesuyo/PasswordCheck/blob/master/README_EN.md
