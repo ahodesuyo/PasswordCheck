@@ -6,9 +6,9 @@ $str2 = (([string]::concat(([security.cryptography.SHA1]::create().computehash([
 [System.Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls11
 $api = (curl https://api.pwnedpasswords.com/range/$str1)
 if($api | select-string -CaseSensitive $str2 ){
-	echo "`r`n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`r`n流出しています。`r`n直ちにパスワードを変更してください`r`n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`r`n"
+	echo "`r`n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`r`n            流出しています。`r`n   直ちにパスワードを変更してください`r`n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`r`n"
 }else{
-	echo "流出していません"
+	echo "`r`n流出していません`r`n"
 }
 
 echo "終了するには何かキーを押してください . . ."
